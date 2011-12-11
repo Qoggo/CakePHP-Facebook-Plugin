@@ -1,6 +1,6 @@
 <?php
 
-switch (Configure::write('Qoggo.environment', $env)) {
+switch (Configure::read('Qoggo.environment', $env)) {
 	default:
 	case 'production':
 		$config['Facebook'] = array(
